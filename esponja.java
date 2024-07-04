@@ -1069,17 +1069,13 @@ public class esponja {
         int op;
         System.out.println("SELECIONE POR CUAL METODO DE PAGO, VA A RELIZAR SU PAGO");
         System.out.println("1:   TERJETA VISA/MASTERCARD");
-        System.out.println("2:   YAPE (SOLO NUMERO)");
-        System.out.println("3:   CONTRA ENTREGA (EFECTIVO)");
+        System.out.println("2:   CONTRA ENTREGA (EFECTIVO)");
         op=opcion.nextInt();
         switch (op){
             case 1:
                 metodopago_tarjeta();
                 break;
             case 2:
-                metodopago_yape();
-                break;
-            case 3:
                 metodopago_efectivo();
                 break;
         }
@@ -1160,13 +1156,6 @@ public class esponja {
         montoefectivo= esponja.nextDouble();
         System.out.println("tu cambio es: $"+montoefectivo);
         System.out.println("PAGO REALIZADO GRACIAS POR SU COMPRA");
-        System.out.println("gracias por vistar a oechsle");
-    }
-    static void metodopago_yape() {
-        Scanner esponja = new Scanner(System.in);
-        int num;
-        System.out.println("Hacer el yape a este numero 994546105");
-        num= esponja.nextInt();
         System.out.println("gracias por vistar a oechsle");
     }
     public static void main (String[]args){
